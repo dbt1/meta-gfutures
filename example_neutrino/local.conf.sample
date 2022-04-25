@@ -41,6 +41,8 @@ CONF_VERSION = "1"
 
 DISTRO = "tuxbox"     
 MACHINE ?= "hd51"
+#MACHINE ?= "h7"
+#MACHINE ?= "bre2ze4k"
 
 ### Image Settings
 
@@ -84,7 +86,7 @@ IMAGE_INSTALL_append += ""
 IPK_FEED_SERVER = "file:////media/sda1/service/ipk"
 IMAGE_LOCATION = "file:////media/sda1/service/image/flashimage.img"
 RELEASE_TEXT_LOCATION = "file:////media/sda1/service/image/beta.txt" 
-#RELEASE_TEXT_LOCATION_HOST = "/var/www/images/hd51/beta.txt"
+#RELEASE_TEXT_LOCATION_HOST = "/var/www/images/${MACHINE}/beta.txt"
 
 ### Image version settings
 #

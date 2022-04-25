@@ -1,6 +1,6 @@
 #!/bin/sh
 
-machine="hd51"
+machine="$HOSTNAME"
 hdd_mount="/media/usb"
 $(cat /proc/mounts | grep -q "/media/hdd") && hdd_mount="/media/hdd"
 servicedir="$hdd_mount/service"
